@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import { Container, VStack, HStack, Text, Box, Slider, SliderTrack, SliderFilledTrack, SliderThumb, Button, Input, Image, IconButton } from "@chakra-ui/react";
+import { Container, VStack, HStack, Text, Box, Slider, SliderTrack, SliderFilledTrack, SliderThumb, Button, Input, Image, IconButton, Link } from "@chakra-ui/react";
+import { Link as RouterLink } from "react-router-dom";
 import { FaDonate, FaVoteYea } from "react-icons/fa";
 
 const projects = [
@@ -33,9 +34,11 @@ const ProjectCard = ({ project, onVote, onDonate }) => {
   return (
     <Box borderWidth="1px" borderRadius="lg" overflow="hidden" p={4} w="100%">
       <Image src={project.image} alt={project.name} mb={4} />
-      <Text fontSize="xl" fontWeight="bold">
-        {project.name}
-      </Text>
+      <Link as={RouterLink} to={`/project/${project.id}`}>
+        <Text fontSize="xl" fontWeight="bold">
+          {project.name}
+        </Text>
+      </Link>
       <Text mb={4}>{project.description}</Text>
       <Text mb={2}>Committed: {project.committed.join(", ")}</Text>
       <HStack mb={4}>
