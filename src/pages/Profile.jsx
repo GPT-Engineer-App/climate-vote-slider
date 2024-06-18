@@ -1,4 +1,4 @@
-import { Box, Heading, Text, VStack, Input, Button } from "@chakra-ui/react";
+import { Box, Heading, Text, VStack, Input, Button, HStack, Image } from "@chakra-ui/react";
 import { useState } from "react";
 
 function Profile() {
