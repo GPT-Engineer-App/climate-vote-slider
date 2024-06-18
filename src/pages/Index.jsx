@@ -33,7 +33,9 @@ const ProjectCard = ({ project, onVote, onDonate }) => {
 
   return (
     <Box borderWidth="1px" borderRadius="lg" overflow="hidden" p={4} w="100%">
-      <Image src={project.image} alt={project.name} mb={4} />
+      <Link as={RouterLink} to={`/project/${project.id}`}>
+        <Image src={project.image} alt={project.name} mb={4} />
+      </Link>
       <Link as={RouterLink} to={`/project/${project.id}`}>
         <Text fontSize="xl" fontWeight="bold">
           {project.name}
