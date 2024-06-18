@@ -1,5 +1,6 @@
-import { Box, Heading, Text, VStack, Input, Button, HStack, Image } from "@chakra-ui/react";
+import { Box, Heading, Text, VStack, Input, Button, HStack, Image, Link } from "@chakra-ui/react";
 import { useState } from "react";
+import { Link as RouterLink } from "react-router-dom";
 
 function Profile() {
   const [name, setName] = useState("John Doe");
@@ -49,6 +50,14 @@ function Profile() {
           <Button onClick={handleUpdateProfile} colorScheme="teal">
             Update Profile
           </Button>
+        </Box>
+        <Box>
+          <Heading as="h2" size="lg" mb={2}>
+            Create a New Project
+          </Heading>
+          <Link as={RouterLink} to="/create-project">
+            <Button colorScheme="teal">Create Project</Button>
+          </Link>
         </Box>
       </VStack>
     </Box>

@@ -1,4 +1,4 @@
-import { Box, Heading, Text, VStack, Image, Container, Input, Button } from "@chakra-ui/react";
+import { Box, Heading, Text, VStack, Image, Input, Button } from "@chakra-ui/react";
 import { useState } from "react";
 import { useParams } from "react-router-dom";
 

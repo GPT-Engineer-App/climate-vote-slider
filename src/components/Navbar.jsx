@@ -25,6 +25,11 @@ function Navbar() {
               Contact
             </Button>
           </Link>
+          <Link to="/create-project">
+            <Button variant={"solid"} colorScheme={"teal"} size={"sm"} mr={4}>
+              Create Project
+            </Button>
+          </Link>
 
           <Button onClick={toggleColorMode} size={"sm"} ml={4}>
             Toggle {useColorModeValue("Dark", "Light")}
