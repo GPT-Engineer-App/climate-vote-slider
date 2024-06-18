@@ -1,4 +1,4 @@
-import { Box, Heading, Text, VStack, Image } from "@chakra-ui/react";
+import { Box, Heading, Text, VStack, Image, Container } from "@chakra-ui/react";
 import { useParams } from "react-router-dom";
 
 const ProjectDetails = () => {
