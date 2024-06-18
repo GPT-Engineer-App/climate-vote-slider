@@ -20,7 +20,12 @@ function Navbar() {
               Profile
             </Button>
           </Link>
-          <Button onClick={toggleColorMode} size={"sm"} mr={4}>
+          <Link to="/contact">
+            <Button variant={"solid"} colorScheme={"teal"} size={"sm"} mr={4}>
+              Contact
+            </Button>
+          </Link>
+          <Button onClick={toggleColorMode} size={"sm"} ml={4}>
             Toggle {useColorModeValue("Dark", "Light")}
           </Button>
         </Flex>

@@ -17,13 +17,25 @@ const ProjectDetails = () => {
         Project Details for {id}
       </Heading>
       <VStack align="start" spacing={4}>
-        <Text fontSize="lg">Operation: Details about the operation.</Text>
-        <Text fontSize="lg">Finance: Financial details.</Text>
-        <Text fontSize="lg">Desired Outcome: Expected results.</Text>
-        <Text fontSize="lg">Participants: List of participants.</Text>
-        <Text fontSize="lg">Plans: Project plans.</Text>
-        <Text fontSize="lg">Milestones: Key milestones.</Text>
-        <Image src="path/to/footage.jpg" alt="Project Footage" />
+        <Text fontSize="lg">
+          <strong>Operation:</strong> Details about the operation.
+        </Text>
+        <Text fontSize="lg">
+          <strong>Finance:</strong> Financial details.
+        </Text>
+        <Text fontSize="lg">
+          <strong>Desired Outcome:</strong> Expected results.
+        </Text>
+        <Text fontSize="lg">
+          <strong>Participants:</strong> List of participants.
+        </Text>
+        <Text fontSize="lg">
+          <strong>Plans:</strong> Project plans.
+        </Text>
+        <Text fontSize="lg">
+          <strong>Milestones:</strong> Key milestones.
+        </Text>
+        <Image src="https://via.placeholder.com/400" alt="Project Footage" />
         <Input placeholder="Add details about your project" value={details} onChange={(e) => setDetails(e.target.value)} />
         <Button onClick={handleAddDetails} colorScheme="teal">
           Add Details
